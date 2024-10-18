@@ -76,7 +76,6 @@ class DatabaseHelper {
     );
   }
 
-  // Get all bookmarks
   Future<List<Map<String, String>>> getBookmarks() async {
     final db = await database;
     final List<Map<String, dynamic>> maps = await db.query('bookmarks');
@@ -89,7 +88,6 @@ class DatabaseHelper {
     });
   }
 
-  // Delete a bookmark by URL
   Future<void> deleteBookmark(String url) async {
     final db = await database;
     await db.delete(
