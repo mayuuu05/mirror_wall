@@ -21,9 +21,6 @@ class WebController extends GetxController {
   }
 
 
-  // InAppWebViewController? webViewController;
-  // RxString currentUrl = 'https://www.google.com'.obs;
-
   void loadSearchEngine(String url) {
     currentUrl.value = url;
     webViewController?.loadUrl(
