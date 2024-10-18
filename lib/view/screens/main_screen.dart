@@ -50,7 +50,7 @@ class MainScreen extends StatelessWidget {
             ],
             onSelected: (value) {
               if (value == 1) {
-                // Handle showing bookmarks
+            
               } else if (value == 2) {
 
                 _showSearchEngineDialog(context, webController);
@@ -183,7 +183,7 @@ class MainScreen extends StatelessWidget {
     showDialog(
       context: context,
       builder: (BuildContext context) {
-        String selectedEngine = 'https://www.google.com'; // default selected search engine
+        String selectedEngine = 'https://www.google.com'; 
         return AlertDialog(
           title: Text('Search Engine'),
           content: Column(
